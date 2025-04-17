@@ -8,7 +8,7 @@ const LabelsSection = () => {
   }, []);
   const labels = [
     { text: "Artist-First Approach – Prioritizing fair opportunities, recognition, and sustainable careers for creative professionals.", icon: "fa-users" },
-    { text: "Community-Driven Collaboration – Bridging the gap between artists and businesses through intuitive and efficient technology.", icon: "fa-handshake" },
+    // { text: "Community-Driven Collaboration – Bridging the gap between artists and businesses through intuitive and efficient technology.Building a vibrant, interco nnected network of artists, businesses, and cultural enthusiasts.", icon: "fa-handshake" },
     { text: "Building a vibrant, interconnected network of artists, businesses, and cultural enthusiasts.", icon: "fa-network-wired" },
     { text: "Fair & Transparent Payments – Ensuring timely, secure, and equitable compensation for artists.", icon: "fa-money-bill-wave" },
     { text: "For the Creative Good – Championing art as a force for positive social, cultural, and economic impact.", icon: "fa-heart" },
