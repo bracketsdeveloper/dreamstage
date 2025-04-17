@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import WhySection from './components/WhySection';
+import JoinSection from './components/JoinSection';
+import LabelsSection from './components/LabelsSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
+// import './styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="min-h-screen">
+    <WhatsAppFloat/>
+    <Header />
+    <Hero />
+    <div className="page-break"></div>
+    <WhySection />
+    <div className="page-break"></div>
+    <JoinSection />
+    <div className="page-break"></div>
+    <LabelsSection />
+    <div className="page-break"></div>
+    <TestimonialsSection />
+    <div className="page-break"></div>
+    <Footer />
+  </div>
+);
 
 export default App;

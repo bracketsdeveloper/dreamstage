@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.header{
+  background-color: #000000a9;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.color-text {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d, #f7d794, #ff9f43);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  animation: textGradient 10s ease infinite;
+}
+
+@keyframes textGradient {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  scroll-snap-align: start;
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+.label-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.label-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.fab.fa-whatsapp {
+  font-size: 1.5rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
