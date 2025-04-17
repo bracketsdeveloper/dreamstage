@@ -7,6 +7,7 @@ import LabelsSection from './components/LabelsSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 // import './styles.css';
 
 const App = () => (
